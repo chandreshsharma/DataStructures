@@ -36,7 +36,8 @@ int Stack::top()
 {   
     if(values.empty())   {
         std::cout << "Empty Stack !!" << std::endl;
-        return INT_MAX;
+        ///return INT_MAX;
+        return std::numeric_limits<int>::max();
     }
     return(*(values.rbegin()));
 }
