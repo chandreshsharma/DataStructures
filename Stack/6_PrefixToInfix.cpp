@@ -28,7 +28,7 @@ public:
         return convertToInfix(_prefix);
     }
     
-    std::string getPostfix() {
+    std::string getPrefix() {
         return _prefix;
     }
 protected:
@@ -77,10 +77,10 @@ std::string PrefixToInfix::convertToInfix(const std::string & prefix)
 int main()
 {
     PrefixToInfix pre2In1("*A+B/CD");
-    std::cout << "Prefix: " << pre2In1.getPostfix() << ", Infix: " << pre2In1.getInfix() << std::endl;
+    std::cout << "Prefix: " << pre2In1.getPrefix() << ", Infix: " << pre2In1.getInfix() << std::endl;
 
     PrefixToInfix pre2In2("/*A+BCD");
-    std::cout << "Prefix: " << pre2In2.getPostfix() << ", Infix: " << pre2In2.getInfix() << std::endl;
+    std::cout << "Prefix: " << pre2In2.getPrefix() << ", Infix: " << pre2In2.getInfix() << std::endl;
 
     return 0;
 }
